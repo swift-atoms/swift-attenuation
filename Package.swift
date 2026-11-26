@@ -29,7 +29,8 @@ let package = Package(
         .testTarget(
             name: "Attenuation Tests",
             dependencies: [
-                .target(name: "Attenuation")
+                .target(name: "Attenuation"),
+                .product(name: "Numeric", package: "swift-numeric"),
             ]
         ),
     ],

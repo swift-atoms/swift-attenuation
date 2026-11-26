@@ -1,4 +1,5 @@
 import Attenuation
+import Numeric
 import Testing
 
 enum `Attenuation Tests` {}
