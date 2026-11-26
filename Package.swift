@@ -15,13 +15,15 @@ let package = Package(
         .library(name: "Attenuation", targets: ["Attenuation"])
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-atoms/swift-quantity.git", branch: "main")
+        .package(url: "https://github.com/swift-atoms/swift-quantity.git", branch: "main"),
+        .package(url: "https://github.com/swift-atoms/swift-numeric.git", branch: "main"),
     ],
     targets: [
         .target(
             name: "Attenuation",
             dependencies: [
-                .product(name: "Quantity", package: "swift-quantity")
+                .product(name: "Quantity", package: "swift-quantity"),
+                .product(name: "Numeric", package: "swift-numeric"),
             ]
         ),
         .testTarget(
